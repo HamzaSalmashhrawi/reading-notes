@@ -12,9 +12,8 @@
 * JavaScript
    * This is where we can change how the page behaves, adding interactivity. We will aim to keep as much of our JavaScript as possible in separate files. 
 
-![difference](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmH4x0WRHBWGXC39f3sjPXXBf68al3KkLvrg&usqp=CAU)
 
-![difference2](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzXJEgCaBfDQUNR_vFb9Yd834fCkCm5uxQQ&usqp=CAU)
+![imgdif](https://www.onely.com/wp-content/uploads/blog/2020/Ultimate_Guide_JS_SEO_2020_Edition/003-chapter1-html-css-js-chart-1000x563.jpg)
 
 
 
