@@ -7,3 +7,5 @@
 |---|-----|
 1|[growth mindset](Read1.md)
 2|[GIT](Read02.md)
+3|[mark up & HTML](Read03.md)
+4|[Java script](Read04.md)
