@@ -8,4 +8,6 @@
 1|[growth mindset](Read1.md)
 2|[GIT](Read02.md)
 3|[mark up & HTML](Read03.md)
-4|[Java script](Read04.md)
+4|[Java script](Read04a.md)
+5|[How computer works](Read04b.md)
+6|[comparison and logical operators](Read05.md)
