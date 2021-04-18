@@ -11,3 +11,5 @@
 4|[Java script](Read04a.md)
 5|[How computer works](Read04b.md)
 6|[comparison and logical operators](Read05.md)
+7|[java functions](Read06.md)
+8|[CSS](Read07.md)

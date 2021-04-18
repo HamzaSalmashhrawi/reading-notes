@@ -53,3 +53,25 @@
 ### WHAT IS A FUNCTION?
 #### Functions let you group a series of statements together to perform a specific task. If different parts of a script repeat the same task, you can reuse the function (rather than repeating the same set of statements). 
 ### A BASIC FUNCTION
+##### 
+#### Before the closing </body> tag, you can see the link to the JavaScript file. The JavaScript file starts with a variable used to hold a new message, and is followed by a function called updateMessage(). 
+#### You do not need to worry about how this function works yet - you will learn about that over the next few pages. For the moment, it is just worth noting that inside the curly braces of the function are two statements
+
+### Function expressions
+#### While the function declaration above is syntactically a statement, functions can also be created by a function expression.
+
+#### Such a function can be anonymous; it does not have to have a name. For example, the function square could have been defined as:
+
+* const square = function(number) { return number * number }
+var x = square(4) // x gets the value 16
+
+#### However, a name can be provided with a function expression. Providing a name allows the function to refer to itself, and also makes it easier to identify the function in a debugger's stack traces:
+
+ * #### const factorial = function fac(n) { return n < 2 ? 1 : n * fac(n - 1) } console.log(factorial(3))
+#### Function expressions are convenient when passing a function as an argument to another function. The following example shows a map function that should receive a function as first argument and an array as second argument.
+
+### Calling functions
+#### Defining a function does not execute it. Defining it names the function and specifies what to do when the function is called.
+
+#### Calling the function actually performs the specified actions with the indicated parameters. For example, if you define the function square, you could call it as follows:
+
