@@ -1,8 +1,8 @@
 # Code 201 Reading notes
 
 ## table of content:
-| No. | Read 201                                         |
-| --- | ------------------------------------------------ |
+| No. | Read 201                                         |     |
+| --- | ------------------------------------------------ | --- |
 | 1   | [layout & extra markup](Class-01.md)             |
 | 2   | [text inrtodusing css & basic java](Class-02.md) |
 | 3   | [lists,boxes,Arrays and loops](Class-03.md)      |
