@@ -89,14 +89,106 @@ ________________________________________________________________________________
 #### THE DOCUMENT NODE
 ##### Above, you can see the HTML code for a shopping list, and on the right hand page is its DOM tree. Every element, attribute, and piece of text in the HTML is represented by its own DOM node. At the top of the tree a document node is added; it represents the entire page (and also corresponds to the document object, which you first met on p36). When you access any element, attribute, or text node, you navigate to it via the document node. It is the starting point for all visits to the DOM tree. 
 
-ELEMENT NODES
-HTML elements describe the structure of an HTML
-page. (The <h l > - <h6> elements describe what
-parts are headings; the <p> tags indicate where
-paragraphs of text start and finish; and so on.)
-To access the DOM tree, you start by looking for
-elements. Once you find the element you want, then
-you can access its text and attribute nodes if you
-want to. This is why you start by learning methods
-that allow you to access element nodes, before
-learning to access and alter text or attributes.
+#### ELEMENT NODES
+##### HTML elements describe the structure of an HTML page. `(The <h l > - <h6>` elements describe what parts are headings; the `<p>` tags indicate where paragraphs of text start and finish; and so on.) To access the DOM tree, you start by looking for elements. Once you find the element you want, then you can access its text and attribute nodes if you want to. This is why you start by learning methods that allow you to access element nodes, before learning to access and alter text or attributes.
+#### Each node is an object with methods and properties.
+##### Scripts access and update this DOM tree (not the source HTML file).
+##### Any changes made to the DOM tree are reflected in the browser. 
+
+![dom-tree](img/dom-tree.png)
+
+#### ATTRIBUTE NODES 
+##### The opening tags of HTML elements can carry attributes and these are represented by attribute nodes in the DOM tree. Attribute nodes are not children of the element thar carries them; they are part of that element. Once you access an element, there are specific JavaScript methods and properties to read or change that element's attributes. For example, it is common to change the values of cl ass attributes to trigger new CSS rules that affect their presentation. 
+
+#### TEXT NODES
+##### Once you have accessed an element node, you can then reach the text within that element. This is stored in its own text node. Text nodes cannot have children. If an element contains text and another child element, the child element is not a child of the text node but rather a child of the containing element. (See the `<em>` element on the first `<l i > item.)` This illustrates how the text node is always a new branch of the DOM tree, and no further branches come off of it.
+----------------------------------------
+
+### SELECTING ELEMENTS USING ID ATTRIBUTES
+
+##### get ElementByid () allows youto select a single element node by specifying the value of its id attribute.
+
+##### This method has one parameter: the value of the id attribute onthe element you want to select. This value is placed inside quote marks because it is a string. The quotes can be single or double quotes, but they must match.
+
+#### example: 
+```
+html
+
+<hl id="header">List King<lhl>
+<h2>Buy groceries<lh2>
+<ul>
+<li id="one" class="hot"><em>fresh<lem>
+figs<lli>
+<li id="two" class="hot">pine nuts<lli>
+<li id="three" class="hot">honey<lli>
+<li id="four">balsamic vi negar<ll i>
+</ul
+```
+```
+Javascript
+
+II Select the element and store it in a variable.
+var el = document.getElementByid('one');
+II Change the value of the class attribute.
+el.className ='cool ' ; 
+```
+
+![result](img/sc30.png)
+________________________________________________
+
+
+### TRAVERSING THE DOM
+
+##### When you have an element node, you can select another element in relation to it using these five properties. This is known as traversing the DOM. 
+#### parentNode
+##### This property finds the element node for the containing (or parent) element in the HTML. (1) If you started with the first `<l i >element`, then its parent node would be the one representing the `<ul >element.`
+
+#### previousSibling
+#### nextSibling
+##### These properties find the previous or next sibling of a node if there are siblings. If you started with the first `<1 i >`element, it would not have a previous sibling. However, its next sibling (2) would be the node representing the second `<l i >`
+
+#### firstChild
+#### lastChild
+##### These properties find the first or last child of the current element. If you started with the `<u 1 >` element, the first child would bethe node representing the first `<l i>` element, and (3) the last child would be the last `<1 i >`.
+
+________________________________________
+
+## CREATING ATTRIBUTES & CHANGING THEIR VALUES 
+
+```
+Javascript
+
+var firstltem = document.getElementByld('one'); II Get the first item
+firstltem .className = 'complete '; II Change its class attribute
+var fourthlt em = document.getElementsByTagName('li ').item(3);ll Get fourth item
+el2.setAttribute('class' , ' cool'); II Add an attribute to it
+```
+![changevalues](img/change.png)
+
+
+---------------------------------------
+
+## REMOVING ATTRIBUTES 
+##### To remove an attribute from an element, first select the element, then call removeAttribute () . It has one parameter: the name of the attribute to remove.
+##### Trying to remove an attribute that does not exist will not cause an error, but it is good practice to check for its existence before attempting to remove it.
+
+```
+Javascript
+
+var firstltem = document .getElementByld{'one '); // Get the first i tem
+if (firstltem.hasAttribute('class')) { //
+firstlt em.removeAttri bute( ' cl ass' ); //
+If it has a class attri bute
+Remove its cl ass attribute 
+
+```
+
+![removeattributes](img/remove.png)
+________________________________________________
+___________________________________________
+
+
+#### all of this info in this readnote taken from javascript_and_jquery_interactive 
+
+References: 
+[javascriptBook](https://slack-files.com/files-pri-safe/TNGRRLUMA-F0203BL41FV/javascript_and_jquery_interactive_jon_du.pdf?c=1619819820-67b52b16b637b19a)
