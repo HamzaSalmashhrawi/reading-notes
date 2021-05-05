@@ -105,3 +105,7 @@ randomFunctio
 #### Sometimes, an error may occur in the script for a reason beyond your control. For example, you might request data from a third party, and their server may not respond. In such cases, it is particularly important to write error-handling code.
 
 #### In the latter part of the chapter, you will learn how to gracefully check whether something will work, and offer an alternative option if it fails.
+
+
+## References :
+### I made this reading note relying on : javascript_and_jquery_interactive Book. 
