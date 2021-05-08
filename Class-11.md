@@ -109,3 +109,6 @@ ________________________________________________________________________________
 
 * Average Time on Site
   * The average amount of time each user has spent on the site per visit.
+
+
+## References : in this reading note i relied on HTML & CSS design and build websites. 
