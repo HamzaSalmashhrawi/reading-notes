@@ -16,7 +16,7 @@ Class 09 | [HTML CSS Forms lists&tables forms , JS events](Class-09.md)
 Class 10 | [JS Error Handlingand debuging](Class-10.md)                                             
 Class 11 | [HTML Images , Practical Information](Class-11.md)                                             
 Class 12 | [Docs for the HTML Element & Chart.js](Class-12.md)                                            
-Class 13 | []()                                             
+Class 13 | [PAST, PRESENT & FUTURE OF LOCAL STORAGE FOR WEB APPLICATIONS](Class-13.md)                                             
 Class 14 | []()                                             
 Class 15 | []()                                             
 
