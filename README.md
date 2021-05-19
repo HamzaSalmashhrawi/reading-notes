@@ -18,7 +18,7 @@ Class 11 | [HTML Images , Practical Information](Class-11.md)
 Class 12 | [Docs for the HTML Element & Chart.js](Class-12.md)                                            
 Class 13 | [PAST, PRESENT & FUTURE OF LOCAL STORAGE FOR WEB APPLICATIONS](Class-13.md)                                             
 Class 14 | [CSS Transforms, Transitions, and Animations](Class-14.md)                                             
-Class 15 | []()                                             
+Class 15 | [What Google Learned About Teams](Class-15.md)                                             
 
 ----------------- 
 # Code 102 Reading notes 
